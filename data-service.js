@@ -10,16 +10,16 @@ const Sequelize = require("sequelize");
     dialectOptions: {
       ssl: true,
      },
-    query: { raw: true }, // update here, you. Need this
+    query: { raw: true }, 
    }
  );
 
-var sequelize = new Sequelize("web322", "postgres", "12wq", {
+/*var sequelize = new Sequelize("web322", "postgres", "12wq", {
   host: "localhost",
   dialect: "postgres",
   port: 5432,
-  query: { raw: true }, // update here, you. Need this
-});
+  query: { raw: true }, 
+});*/
 
 sequelize
   .authenticate()
